@@ -156,7 +156,7 @@ var endGame = function() {
     }
     else {
         window.alert("Thank you for playing Robot Gladiators! Come back soon!");
-    }
+    } 
 };
 
 var shop = function() {
@@ -183,7 +183,7 @@ var shop = function() {
             shop();
             break;
 
-    }
+    } 
 }
 
 // function to set name
