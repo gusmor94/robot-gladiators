@@ -39,15 +39,16 @@ var fightOrSkip = function() {
 }
 
 var fight = function(enemy) {
-    // keep track of who goes first
-    var isPlayerTurn = true; 
-    // randomly change their order
-    if (Math.random() > 0.5) {
-        isPlayerTurn = false;
-    }
+    
 
     // repeat and execute as long as the enemy robot is alive
     while(playerInfo.health > 0 && enemy.health > 0) {
+        // keep track of who goes first
+        var isPlayerTurn = true; 
+        // randomly change their order
+        if (Math.random() > 0.5) {
+            isPlayerTurn = false;
+        }
         if (isPlayerTurn) {
             // ask user if they'd like to fight or skip using fightOrSkip function
             if (fightOrSkip()) {
